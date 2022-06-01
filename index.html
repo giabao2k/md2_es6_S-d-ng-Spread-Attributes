@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //example1
+        const ex1 = ['a','b','c'];
+        const ex2 = [...ex1];
+        const ex3 = [...ex1,'d','e'];
+        console.log(ex1);
+        console.log(ex2);
+        console.log(ex3);
+        //example2
+        const ex4 = ['x','y','z'];
+        const ex5 = [...ex1, ...ex4];
+        console.log(ex5); 
+        //example3
+        const ex6 = {
+            ho: 'ngo',
+            ten: 'bao'
+        }
+        const ex7 ={...ex6};
+        console.log(ex7);
+        //example4
+        const ex8 = {
+            ho: 'ngo',
+            ten: 'bao'
+        }
+        const ex9 = {
+            ho:'nguyen',
+            ten: 'a',
+            tuoi: '22'
+        }
+        const ex10 ={...ex8,...ex9};
+        console.log(ex10);
+        // example5
+        const ex11 = 'ngonguyengiabao';
+        const ex12 = [...ex11];
+        console.log(ex12);
+        // example6
+        const ex13 = [1,2,3,4,5,6];
+        const [a, b, c, ...others] = ex13;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(others);
+
+    </script>
+</body>
+</html>
